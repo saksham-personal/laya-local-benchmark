@@ -68,8 +68,13 @@ def main() -> int:
     write_csv(args.output_dir / "calibration.csv", calibration)
     write_csv(args.output_dir / "selective_routing.csv", selective)
     write_csv(args.output_dir / "latency.csv", latency)
-    machine_text = json.dumps(machine, ensure_ascii=False).lower()
-    target_host = "6240r" in machine_text and "windows" in machine_text
+    processor = str(machine.get("processor") or "").lower()
+    host_os = str(machine.get("os") or "").lower()
+    target_host = (
+        "6240r" in processor and "windows" in host_os
+        and machine.get("logical_processors") == 8
+        and machine.get("torch", {}).get("cuda_available") is False
+    )
     recommendation = "No production recommendation: representative, human-judged company data and target VDI runs are required."
     if not target_host:
         recommendation += " This host is not identified as the target Xeon Gold 6240R VDI."
