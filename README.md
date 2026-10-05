@@ -39,4 +39,4 @@ The INT8 exporter is included for measurement, not assumed acceptable: the pinne
 - CPU performance: local cold load, first call, p50/p95/p99 latency, throughput, and sampled peak RSS at batch 1 and 8, token buckets 128/256/512, and 1/4/8 threads.
 - Reproducibility: pinned upstream commits, model revision, source hashes, deterministic data, raw prediction rows, machine metadata, JSON/CSV/Markdown/HTML reports.
 
-Results from this development PC are not target VDI measurements. A production model recommendation needs the full run on the actual VDI and representative, human-judged company requests. See reports/VDI_SETUP.md and reports/DATASET_CARD.md.
+Results from this development PC are not target VDI measurements. A production model recommendation needs the full run on the actual VDI and representative, human-judged company requests. See reports/VDI_SETUP.md, reports/DATASET_CARD.md, and reports/PROJECT_STATUS.md.
