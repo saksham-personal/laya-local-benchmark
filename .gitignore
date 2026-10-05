@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+downloads/
+models/
+staging/
+results/raw/
+results/summary/
+*.onnx
+*.int8.onnx
+*.zip
+write-test.txt
+.pytest-tmp/
+.test-tmp/
+pytest-cache-files-*/

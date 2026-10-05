@@ -1,0 +1,36 @@
+{
+  "archive_sha256": "bf710ee7bf2c0a1384cbacd5faf55afdbc2c9ee80d17a630aab5547fbc1a89fa",
+  "asset": "laya-export-wheels-windows-x64.zip",
+  "files": [
+    {
+      "path": "ml_dtypes-0.6.0-cp312-cp312-win_amd64.whl",
+      "sha256": "2a3e9d53925597fbffafd2a37048dadeddd0bdaba58058f6ae0869ed709a184d",
+      "size_bytes": 439333
+    },
+    {
+      "path": "onnx-1.23.1-cp312-abi3-win_amd64.whl",
+      "sha256": "7a1de7765463c7baab9a102ca89bcfda833e8343c3b15ac535bc74c87d96b11e",
+      "size_bytes": 7872487
+    },
+    {
+      "path": "onnx_ir-1.0.0-py3-none-any.whl",
+      "sha256": "e578f0d608d3062866b48223616eb2d10a6d6d01f8b8faac596129034f483cc7",
+      "size_bytes": 185849
+    },
+    {
+      "path": "onnxscript-0.7.2-py3-none-any.whl",
+      "sha256": "d0e7121c6a1eefd608058928e111cbdb76709f70d269ff0d07aee493bd1d13c9",
+      "size_bytes": 754215
+    }
+  ],
+  "github": {
+    "release": "assets-v1",
+    "repository": "saksham-personal/laya-local-benchmark"
+  },
+  "id": "laya-export-wheels-windows-x64",
+  "install_subdir": "export-wheels",
+  "kind": "runtime",
+  "platform": "Windows x64 CPython 3.12",
+  "purpose": "ONNX FP32 export and dynamic INT8 quantization; install after offline base runtime",
+  "size_bytes": 9252490
+}
